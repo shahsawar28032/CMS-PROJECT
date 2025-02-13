@@ -24,7 +24,7 @@ if(isset($_POST['delete'])){
 $search = $_POST['search'];
 $sql = "DELETE FROM `student` WHERE ID ='$search'";
 $data=mysqli_query($conn,$sql);
-header("location: index.php");
+header("location: index.php? deleteid=<script> alert('Data uccessfully Deleted through id.')</script>");    
 }
 
 ?>

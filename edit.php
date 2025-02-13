@@ -106,7 +106,7 @@ if(isset($_POST['update']))
     $select = "UPDATE `student` SET `F_NAME`='$fname',`L_NAME`='$lname',`EMAIL`='$email',`PASSWORD`='$password',`GENDER`='$gender',`ROLE`='$role'
     where ID='$stu'";
     mysqli_query($conn,$select);
-    header("location: index.php");
+    header("location: index.php?edit= <script> alert('Data Successfully updated') </script>");
     
 }
 ?>

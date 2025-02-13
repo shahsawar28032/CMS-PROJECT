@@ -31,6 +31,16 @@
       <div data-mdb-input-init class="form-outline mb-4">
       <label class="form-label heading" for="form2Example1">Create Your Account</label>
       </div>
+      <?php if(isset($_GET["success"])){ ?>
+               
+               <div class="alert alert-success alert-dismissible fade show" role="alert">
+                 <strong></strong> <?php echo $_GET["success"]; ?>
+                
+               </div>
+               <p style="color: blue; font-weight:bolder">Here Conform Yourself</p>
+   
+             <?php } ?>
+
         <!-- Email input -->
         <div data-mdb-input-init class="form-outline mb-4">
           <input type="email" name="email" id="form2Example1" class="form-control form-control-lg"placeholder="Email address or Username" />
@@ -126,7 +136,7 @@
                                   $_SESSION["email"] = $row['EMAIL'];
                                   $_SESSION["role"] = $row['ROLE'];
 
-                                  header("Location: index.php");
+                                  header("Location: index.php?ssll= <script> alert('Your are successfully login in our project .') </script>");
                                 }
 
                               }else{

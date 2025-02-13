@@ -12,7 +12,6 @@ if(isset($_POST['saveupdate']))
     
     $update = "UPDATE `student` SET `F_NAME`='$fname',`L_NAME`='$lname',`EMAIL`='$email',`PASSWORD`='$password',`GENDER`='$gender',`ROLE`='$role' WHERE ID = '$search'";
     mysqli_query($conn,$update);
-    header("location: index.php");
-    
+    header("location: index.php? editid=<script> alert('Data uccessfully updated through id.')</script>");    
 }     
 ?>

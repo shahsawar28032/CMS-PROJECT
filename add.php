@@ -93,7 +93,8 @@ $sql  = "INSERT INTO `student`(`F_NAME`, `L_NAME`, `EMAIL`,`PASSWORD`, `GENDER`,
 '$password','$gender','$role','$date','$address')";
 $result= mysqli_query($conn,$sql)or die("query failed");
 //header("location: http://localhost/html_crud/index.php");
-header("location: index.php");
+header("location: index.php?add= <script> alert('Data Successfully inserted') </script>");
+
 mysqli_close($conn);
   }
 }

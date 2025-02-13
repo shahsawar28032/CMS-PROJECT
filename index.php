@@ -41,9 +41,33 @@
 <?php
 include 'header.php';
 ?>
+
+
+<?php if(isset($_GET['ssll'])){ 
+  echo  $_GET['ssll'];} ?>
+
+
+<?php if(isset($_GET['edit'])){ 
+  echo  $_GET['edit'];} ?>
+
+<?php if(isset($_GET['editid'])){ 
+  echo  $_GET['editid'];} ?>
+
+<?php if(isset($_GET['deleteid'])){ 
+  echo  $_GET['deleteid'];} ?>
+
+<?php if(isset($_GET['add'])){ 
+  echo  $_GET['add'];} ?>
+ 
+
+
+
+
 <div id="main-content">
     <h2>All Records</h2>
   <?php  
+
+
      $limit = 3;
   
    if(isset($_GET['page'])){
