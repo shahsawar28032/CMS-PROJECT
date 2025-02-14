@@ -20,13 +20,11 @@ require("parograming.php");
           <div class="col-lg-6 mb-5 mb-lg-0">
             <h1 class="my-5 display-3 fw-bold ls-tight">
               The best offer <br />
-              <span class="text-primary">for your business</span>
+              <span class="text-primary">for my project</span>
             </h1>
             <p style="color: hsl(217, 10%, 50.8%)">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-              quibusdam tempora at cupiditate quis eum maiores libero
-              veritatis? Dicta facilis sint aliquid ipsum atque?
+            A Content Management System (CMS) with CRUD (Create, Read, Update, Delete) functionality allows users to manage content dynamically without requiring technical expertise. CRUD forms enable users 
+            to add, modify, view, and remove records efficiently, ensuring seamless content management.
             </p>
           </div>
   
